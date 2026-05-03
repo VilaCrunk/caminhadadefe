@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caminhada de Fé — 52 Semanas de Oração e Reflexão com Deus</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#FAF7F2',
+            surface: '#F3EDE3',
+            midnight: '#1B2B4A',
+            gold: '#B8975A',
+            'gold-light': '#D4B483',
+            body: '#2C2C2C',
+            muted: '#6B6458',
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Lato', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Lato', system-ui, sans-serif; }
+    .font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    @media (prefers-reduced-motion: reduce) {
+      .fade-in { animation: none !important; opacity: 1 !important; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in { opacity: 0; }
+    .fade-in.visible { animation: fadeInUp 0.4s ease forwards; }
+    .gold-divider {
+      width: 60px; height: 1px;
+      background: rgba(184,151,90,0.5);
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body class="bg-bg text-body antialiased">
+
+  <!-- sections go here -->
+
+  <script>
+    // Intersection Observer for fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
