@@ -61,8 +61,29 @@
 <body class="bg-bg text-body antialiased">
 
   <!-- S1: Hero -->
-<section class="bg-midnight min-h-screen flex items-center py-20 px-6">
-  <div class="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<section class="bg-midnight relative min-h-screen flex items-center overflow-hidden">
+
+  <!-- Mockup como fundo da metade direita (desktop) -->
+  <div class="hidden lg:block absolute inset-y-0 right-0 w-1/2">
+    <img src="assets/mockup-v1.webp"
+         alt="Mockup do livro Caminhada de Fé"
+         fetchpriority="high"
+         class="w-full h-full object-cover object-left"
+         style="opacity:0.92;" />
+    <!-- Gradiente de fusão esquerda -->
+    <div class="absolute inset-y-0 left-0 w-32" style="background: linear-gradient(to right, #1B2B4A, transparent);"></div>
+  </div>
+
+  <!-- Mockup mobile (abaixo do copy) -->
+  <div class="lg:hidden w-full">
+    <img src="assets/mockup-v1.webp"
+         alt="Mockup do livro Caminhada de Fé"
+         fetchpriority="high"
+         class="w-full object-cover"
+         style="max-height:260px; object-position: center top;" />
+  </div>
+
+  <div class="relative max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20 px-6">
 
     <!-- Copy -->
     <div class="fade-in text-center lg:text-left">
@@ -86,17 +107,8 @@
       </p>
     </div>
 
-    <!-- Mockup -->
-    <div class="fade-in flex justify-center lg:justify-end" style="animation-delay:0.15s;">
-      <div class="relative">
-        <img src="assets/capa-caminhada-de-fe.webp"
-             alt="Capa do ebook Caminhada de Fé"
-             width="320" height="511"
-             fetchpriority="high"
-             class="rounded-xl"
-             style="box-shadow: 0 32px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(184,151,90,0.2); transform: rotate(2deg);" />
-      </div>
-    </div>
+    <!-- Coluna direita vazia no desktop (ocupada pelo mockup absoluto) -->
+    <div class="hidden lg:block"></div>
 
   </div>
 </section>
