@@ -13,7 +13,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;600&display=swap" rel="stylesheet" />
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -24,14 +24,14 @@
           colors: {
             bg: '#FAF7F2',
             surface: '#F3EDE3',
-            midnight: '#1B2B4A',
+            midnight: '#07182f',
             gold: '#B8975A',
             'gold-light': '#D4B483',
             body: '#2C2C2C',
             muted: '#6B6458',
           },
           fontFamily: {
-            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            serif: ['Playfair Display', 'Georgia', 'serif'],
             sans: ['Lato', 'system-ui', 'sans-serif'],
           },
         },
@@ -41,7 +41,7 @@
 
   <style>
     body { font-family: 'Lato', system-ui, sans-serif; }
-    .font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    .font-serif { font-family: 'Playfair Display', Georgia, serif; }
     @media (prefers-reduced-motion: reduce) {
       .fade-in { animation: none !important; opacity: 1 !important; }
     }
@@ -68,10 +68,11 @@
     <img src="assets/mockup-v1.webp"
          alt="Mockup do livro Caminhada de Fé"
          fetchpriority="high"
-         class="w-full h-full object-cover object-left"
-         style="opacity:0.92;" />
+         class="w-full h-full object-cover"
+         style="object-position: 45% center; opacity:0.92;"
+         />
     <!-- Gradiente de fusão esquerda -->
-    <div class="absolute inset-y-0 left-0 w-32" style="background: linear-gradient(to right, #1B2B4A, transparent);"></div>
+    <div class="absolute inset-y-0 left-0 w-64" style="background: linear-gradient(to right, #07182f 0%, rgba(7,24,47,0.7) 50%, transparent 100%);"></div>
   </div>
 
   <!-- Mockup mobile (abaixo do copy) -->
@@ -88,15 +89,15 @@
     <!-- Copy -->
     <div class="fade-in text-center lg:text-left">
       <p class="text-gold font-sans text-sm tracking-widest uppercase mb-6">Evangelho e Palavra</p>
-      <h1 class="font-serif text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight mb-6"
+      <h1 class="font-serif text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold leading-tight mb-6"
           style="color:#EDE8DC;">
-        Um ano inteiro<br />
-        caminhando<br />
-        <span style="color:#B8975A;">com Deus.</span>
+        Você ainda não sabe<br />
+        o que vem depois.<br />
+        <span style="color:#B8975A;">E é exatamente aí que<br />Deus está te esperando.</span>
       </h1>
       <p class="text-lg font-sans font-light leading-relaxed mb-8 max-w-md mx-auto lg:mx-0"
          style="color:#C8BFB0;">
-        52 semanas de oração e reflexão para quem precisa de presença, não de resposta.
+        Para quem está no meio do processo — cansado do que ficou para trás, com medo do que ainda não chegou — e precisa de uma voz que diga: você não está sozinho nisso.
       </p>
       <a href="HOTMART_LINK"
          class="inline-block bg-gold hover:bg-gold-light text-white font-sans font-semibold text-base px-10 py-4 rounded-lg transition-colors duration-200 cursor-pointer mb-8">
@@ -121,10 +122,20 @@
       Talvez você conheça bem esse peso.
     </h2>
     <div class="space-y-5 text-left font-sans font-light text-lg leading-relaxed text-body">
-      <p>Você acorda e a primeira sensação é cansaço. Não é falta de sono. É algo mais fundo.</p>
-      <p>Talvez seja uma separação que ainda dói, mesmo que já faz tempo. Ou uma perda que ninguém ao redor consegue entender de verdade.</p>
-      <p>Talvez seja o fim de um ciclo que você nem sabe nomear, só sabe que a vida não cabe mais no lugar onde estava.</p>
-      <p>Ou uma angústia quieta, aquela que não tem nome, que aparece no meio da tarde e fica.</p>
+      <p>Você não parou de crer.</p>
+      <p>Você ainda ora. Ainda acredita. Ainda pede.</p>
+      <p>Mas tem um peso que não sai. Uma pergunta que não cala. Uma sensação de que algo terminou — mas o novo ainda não mostrou a cara.</p>
+      <p>Talvez tenha sido um casamento. Um emprego. Uma fase que durou anos e acabou do nada. Uma versão de você que você não sabe mais quem é.</p>
+      <p>E aí você se vê assim:</p>
+    </div>
+    <ul class="text-left space-y-3 font-sans font-light text-lg leading-relaxed text-body my-6 pl-2">
+      <li class="flex items-start gap-3"><span class="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-gold"></span><span>Acordando e pedindo força a Deus antes mesmo de colocar o pé no chão.</span></li>
+      <li class="flex items-start gap-3"><span class="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-gold"></span><span>Assistindo um vídeo às 23h porque a cabeça não para.</span></li>
+      <li class="flex items-start gap-3"><span class="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-gold"></span><span>Relendo um versículo três vezes porque você precisa acreditar que ele é pra você.</span></li>
+      <li class="flex items-start gap-3"><span class="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-gold"></span><span>Pedindo direção — mas o silêncio parece resposta.</span></li>
+    </ul>
+    <div class="text-left font-sans font-light text-lg leading-relaxed text-body">
+      <p>Você não está fraco. Você está no meio do processo. E o meio é sempre o lugar mais difícil de aguentar.</p>
     </div>
     <div class="my-10 gold-divider"></div>
     <p class="font-serif text-xl italic text-muted leading-relaxed">
@@ -138,19 +149,15 @@
 <!-- S3: Validação -->
 <section class="bg-white py-24 px-6">
   <div class="max-w-2xl mx-auto text-center fade-in">
-    <h2 class="font-serif text-4xl lg:text-5xl font-normal text-midnight mb-8 leading-snug">
-      Você não está fraca.<br />Você está no processo.
+    <h2 class="font-serif text-4xl lg:text-5xl font-normal text-midnight mb-10 leading-snug">
+      Você não está falhando.
     </h2>
-    <div class="space-y-5 font-sans font-light text-lg leading-relaxed text-body text-left">
-      <p>A fé não exige que você esteja bem para se aproximar de Deus. Ela existe exatamente para os momentos em que você não está.</p>
-      <p>O que você sente não é falta de fé. É o peso de ser humana, em um mundo que não para, carregando coisas que ninguém deveria carregar sozinha.</p>
-      <p>E é justamente aqui, nesse lugar exato onde você está, que a oração pode se tornar o seu ponto de apoio.</p>
+    <div class="space-y-6 font-sans font-light text-lg leading-relaxed text-body text-left">
+      <p>Ciclos que acabam doem. Mesmo quando precisavam acabar.</p>
+      <p>A Bíblia não promete que vai ser fácil. Promete que você não vai atravessar sozinho.</p>
+      <p>Mas atravessar pede mais do que fé — pede direção. Pede uma voz que fale com você semana após semana, que não julgue onde você está, que não exija que você chegue perfeito.</p>
+      <p>Que te encontre exatamente onde você está.</p>
     </div>
-    <div class="mt-10 gold-divider"></div>
-    <p class="font-serif text-xl italic text-muted mt-8 leading-relaxed">
-      "Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei."
-    </p>
-    <p class="font-sans text-sm text-muted mt-2">Mateus 11.28</p>
   </div>
 </section>
 
@@ -159,12 +166,12 @@
   <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center fade-in">
 
     <div class="flex justify-center">
-      <img src="assets/capa-caminhada-de-fe.webp"
-           alt="Caminhada de Fé — capa do ebook"
-           width="280" height="447"
+      <img src="assets/mockup-v2.webp"
+           alt="Caminhada de Fé — mockup do livro"
+           width="400" height="536"
            loading="lazy"
-           class="rounded-xl"
-           style="box-shadow: 0 20px 60px rgba(27,43,74,0.15); transform: rotate(-1.5deg);" />
+           class="rounded-xl w-full max-w-sm mx-auto"
+           style="box-shadow: 0 20px 60px rgba(7,24,47,0.15);" />
     </div>
 
     <div class="text-center lg:text-left">
