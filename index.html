@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Caminhada de Fé — 52 Semanas de Oração e Reflexão com Deus</title>
+  <title>Caminhada de Fé - 52 Semanas de Oração e Reflexão com Deus</title>
   <meta name="description" content="52 semanas de oração e reflexão com Deus. Um devocional criado para quem está em processo e precisa de presença, não de resposta." />
-  <meta property="og:title" content="Caminhada de Fé — 52 Semanas de Oração e Reflexão com Deus" />
+  <meta property="og:title" content="Caminhada de Fé - 52 Semanas de Oração e Reflexão com Deus" />
   <meta property="og:description" content="Um guia devocional completo para um ano inteiro de encontros com Deus. Para quem precisa de companhia na caminhada." />
   <meta property="og:image" content="assets/capa-caminhada-de-fe.webp" />
   <meta property="og:type" content="website" />
@@ -61,61 +61,78 @@
 <body class="bg-bg text-body antialiased">
 
   <!-- S1: Hero -->
-<section class="bg-midnight relative min-h-screen flex items-center overflow-hidden">
+<section class="bg-midnight py-12 lg:py-20 px-6">
+  <div class="max-w-6xl mx-auto">
 
-  <!-- Mockup como fundo da metade direita (desktop) -->
-  <div class="hidden lg:block absolute inset-y-0 right-0 w-1/2">
-    <img src="assets/mockup-v1.webp"
-         alt="Mockup do livro Caminhada de Fé"
-         fetchpriority="high"
-         class="w-full h-full object-cover"
-         style="object-position: 45% center; opacity:0.92;"
-         />
-    <!-- Gradiente de fusão esquerda -->
-    <div class="absolute inset-y-0 left-0 w-64" style="background: linear-gradient(to right, #07182f 0%, rgba(7,24,47,0.7) 50%, transparent 100%);"></div>
-  </div>
-
-  <!-- Mockup mobile (abaixo do copy) -->
-  <div class="lg:hidden w-full">
-    <img src="assets/mockup-v1.webp"
-         alt="Mockup do livro Caminhada de Fé"
-         fetchpriority="high"
-         class="w-full object-cover"
-         style="max-height:260px; object-position: center top;" />
-  </div>
-
-  <div class="relative max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20 px-6">
-
-    <!-- Copy -->
-    <div class="fade-in text-center lg:text-left">
-      <p class="text-gold font-sans text-sm tracking-widest uppercase mb-6">Evangelho e Palavra</p>
-      <h1 class="font-serif text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold leading-tight mb-6"
+    <!-- Mobile: headline primeiro -->
+    <div class="lg:hidden text-center mb-8 fade-in">
+      <p class="text-gold font-sans text-sm tracking-widest uppercase mb-5">Evangelho e Palavra</p>
+      <h1 class="font-serif text-4xl sm:text-5xl font-semibold leading-tight"
           style="color:#EDE8DC;">
-        Você ainda não sabe<br />
-        o que vem depois.<br />
-        <span style="color:#B8975A;">E é exatamente aí que<br />Deus está te esperando.</span>
+        Você ainda não sabe o que vem depois.<br>
+        <span style="color:#B8975A;">E é exatamente aí que Deus está te esperando.</span>
       </h1>
-      <p class="text-lg font-sans font-light leading-relaxed mb-8 max-w-md mx-auto lg:mx-0"
+    </div>
+
+    <!-- Mobile: mockup -->
+    <div class="lg:hidden flex justify-center mb-8">
+      <img src="assets/mockup-hero-mobile.webp"
+           alt="Mockup do livro Caminhada de Fé"
+           fetchpriority="high"
+           class="w-full max-w-xs rounded-2xl"
+           style="box-shadow: 0 8px 60px rgba(184,151,90,0.2), 0 2px 20px rgba(0,0,0,0.4);" />
+    </div>
+
+    <!-- Mobile: subheadline + CTA -->
+    <div class="lg:hidden text-center fade-in">
+      <p class="text-lg font-sans font-light leading-relaxed mb-8 max-w-md mx-auto"
          style="color:#C8BFB0;">
-        Para quem está no meio do processo — cansado do que ficou para trás, com medo do que ainda não chegou — e precisa de uma voz que diga: você não está sozinho nisso.
+        Para quem está no meio do processo - cansado do que ficou para trás, com medo do que ainda não chegou - e precisa de uma voz que diga: você não está sozinho nisso.
       </p>
-      <a href="HOTMART_LINK"
-         class="inline-block bg-gold hover:bg-gold-light text-white font-sans font-semibold text-base px-10 py-4 rounded-lg transition-colors duration-200 cursor-pointer mb-8">
-        Quero começar minha caminhada
+      <a href="https://pay.hotmart.com/C105726878P?checkoutMode=10"
+         class="inline-block bg-gold hover:bg-gold-light font-sans font-semibold text-base px-10 py-4 rounded-lg transition-colors duration-200 cursor-pointer mb-6" style="color:#FFFFFF;">
+        QUERO COMEÇAR MINHA CAMINHADA
       </a>
       <p class="font-sans text-sm" style="color:#8A9BBF;">
         86 mil inscritos confiam no canal Evangelho e Palavra
       </p>
     </div>
 
-    <!-- Coluna direita vazia no desktop (ocupada pelo mockup absoluto) -->
-    <div class="hidden lg:block"></div>
+    <!-- Desktop: duas colunas -->
+    <div class="hidden lg:grid gap-16 items-center" style="grid-template-columns: 5fr 7fr;">
+      <div class="fade-in text-left">
+        <p class="text-gold font-sans text-sm tracking-widest uppercase mb-6">Evangelho e Palavra</p>
+        <h1 class="font-serif text-4xl xl:text-5xl font-semibold leading-tight mb-6"
+            style="color:#EDE8DC;">
+          Você ainda não sabe o que vem depois.<br>
+          <span style="color:#B8975A;">E é exatamente aí que Deus está te esperando.</span>
+        </h1>
+        <p class="text-lg font-sans font-light leading-relaxed mb-8 max-w-md"
+           style="color:#C8BFB0;">
+          Para quem está no meio do processo - cansado do que ficou para trás, com medo do que ainda não chegou - e precisa de uma voz que diga: você não está sozinho nisso.
+        </p>
+        <a href="https://pay.hotmart.com/C105726878P?checkoutMode=10"
+           class="inline-block bg-gold hover:bg-gold-light text-white font-sans font-semibold text-base px-10 py-4 rounded-lg transition-colors duration-200 cursor-pointer mb-8">
+          QUERO COMEÇAR MINHA CAMINHADA
+        </a>
+        <p class="font-sans text-sm" style="color:#8A9BBF;">
+          86 mil inscritos confiam no canal Evangelho e Palavra
+        </p>
+      </div>
+      <div class="flex items-center h-full">
+        <img src="assets/mockup-hero-43.webp"
+             alt="Mockup do livro Caminhada de Fé"
+             fetchpriority="high"
+             class="w-full rounded-2xl"
+             style="box-shadow: 0 8px 60px rgba(184,151,90,0.2), 0 2px 20px rgba(0,0,0,0.4);" />
+      </div>
+    </div>
 
   </div>
 </section>
 
 <!-- S2: Espelho -->
-<section class="bg-bg py-24 px-6">
+<section class="bg-bg py-16 lg:py-14 lg:py-24 px-6">
   <div class="max-w-2xl mx-auto text-center fade-in">
     <div class="gold-divider mb-10"></div>
     <h2 class="font-serif text-4xl lg:text-5xl font-normal text-midnight mb-10 leading-snug">
@@ -124,7 +141,7 @@
     <div class="space-y-5 text-left font-sans font-light text-lg leading-relaxed text-body">
       <p>Você não parou de crer.</p>
       <p>Você ainda ora. Ainda acredita. Ainda pede.</p>
-      <p>Mas tem um peso que não sai. Uma pergunta que não cala. Uma sensação de que algo terminou — mas o novo ainda não mostrou a cara.</p>
+      <p>Mas tem um peso que não sai. Uma pergunta que não cala. Uma sensação de que algo terminou - mas o novo ainda não mostrou a cara.</p>
       <p>Talvez tenha sido um casamento. Um emprego. Uma fase que durou anos e acabou do nada. Uma versão de você que você não sabe mais quem é.</p>
       <p>E aí você se vê assim:</p>
     </div>
@@ -132,7 +149,7 @@
       <li class="flex items-start gap-3"><span class="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-gold"></span><span>Acordando e pedindo força a Deus antes mesmo de colocar o pé no chão.</span></li>
       <li class="flex items-start gap-3"><span class="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-gold"></span><span>Assistindo um vídeo às 23h porque a cabeça não para.</span></li>
       <li class="flex items-start gap-3"><span class="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-gold"></span><span>Relendo um versículo três vezes porque você precisa acreditar que ele é pra você.</span></li>
-      <li class="flex items-start gap-3"><span class="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-gold"></span><span>Pedindo direção — mas o silêncio parece resposta.</span></li>
+      <li class="flex items-start gap-3"><span class="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-gold"></span><span>Pedindo direção - mas o silêncio parece resposta.</span></li>
     </ul>
     <div class="text-left font-sans font-light text-lg leading-relaxed text-body">
       <p>Você não está fraco. Você está no meio do processo. E o meio é sempre o lugar mais difícil de aguentar.</p>
@@ -147,7 +164,7 @@
 </section>
 
 <!-- S3: Validação -->
-<section class="bg-white py-24 px-6">
+<section class="bg-white py-14 lg:py-24 px-6">
   <div class="max-w-2xl mx-auto text-center fade-in">
     <h2 class="font-serif text-4xl lg:text-5xl font-normal text-midnight mb-10 leading-snug">
       Você não está falhando.
@@ -155,19 +172,26 @@
     <div class="space-y-6 font-sans font-light text-lg leading-relaxed text-body text-left">
       <p>Ciclos que acabam doem. Mesmo quando precisavam acabar.</p>
       <p>A Bíblia não promete que vai ser fácil. Promete que você não vai atravessar sozinho.</p>
-      <p>Mas atravessar pede mais do que fé — pede direção. Pede uma voz que fale com você semana após semana, que não julgue onde você está, que não exija que você chegue perfeito.</p>
+      <p>Mas atravessar pede mais do que fé - pede direção. Pede uma voz que fale com você semana após semana, que não julgue onde você está, que não exija que você chegue perfeito.</p>
       <p>Que te encontre exatamente onde você está.</p>
     </div>
   </div>
 </section>
 
 <!-- S4: Apresentação do Produto -->
-<section class="bg-bg py-24 px-6">
+<section class="bg-bg py-14 lg:py-24 px-6">
   <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center fade-in">
+
+    <div class="lg:hidden text-center mb-3">
+      <p class="font-sans text-sm tracking-widest uppercase text-gold mb-3">O produto</p>
+      <h2 class="font-serif text-4xl font-semibold text-midnight leading-tight">
+        Caminhada de Fé nasceu pra ser essa voz.
+      </h2>
+    </div>
 
     <div class="flex justify-center">
       <img src="assets/mockup-v2.webp"
-           alt="Caminhada de Fé — mockup do livro"
+           alt="Caminhada de Fé - mockup do livro"
            width="400" height="536"
            loading="lazy"
            class="rounded-xl w-full max-w-sm mx-auto"
@@ -175,12 +199,12 @@
     </div>
 
     <div class="text-center lg:text-left">
-      <p class="font-sans text-sm tracking-widest uppercase text-gold mb-4">O produto</p>
-      <h2 class="font-serif text-4xl lg:text-5xl font-semibold text-midnight leading-tight mb-8">
+      <p class="hidden lg:block font-sans text-sm tracking-widest uppercase text-gold mb-4">O produto</p>
+      <h2 class="hidden lg:block font-serif text-4xl lg:text-5xl font-semibold text-midnight leading-tight mb-8">
         Caminhada de Fé nasceu pra ser essa voz.
       </h2>
       <div class="space-y-5 font-sans font-light text-lg leading-relaxed text-body">
-        <p>Não é um devocional pesado. Não é religiosidade com cobrança. É um guia espiritual de 52 semanas — um ano inteiro ao seu lado — com orações, reflexões e práticas simples que falam direto com o que você está vivendo.</p>
+        <p>Não é um devocional pesado. Não é religiosidade com cobrança. É um guia espiritual de 52 semanas - um ano inteiro ao seu lado - com orações, reflexões e práticas simples que falam direto com o que você está vivendo.</p>
         <p>Cada semana tem um tema. Você escolhe o que fala mais alto hoje. Não tem ordem obrigatória, não tem pressão, não tem ritual.</p>
         <p class="font-serif italic text-muted text-xl">Só você, a Palavra, e o tempo que Deus precisa pra trabalhar.</p>
       </div>
@@ -190,7 +214,7 @@
 </section>
 
 <!-- S5: O que você recebe -->
-<section class="bg-white py-24 px-6">
+<section class="bg-white py-14 lg:py-24 px-6">
   <div class="max-w-5xl mx-auto fade-in">
     <div class="text-center mb-14">
       <p class="font-sans text-sm tracking-widest uppercase text-gold mb-4">O que está incluído</p>
@@ -200,56 +224,56 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
       <!-- Card 1: cruz (oração) -->
-      <div class="bg-bg rounded-xl p-8 text-center" style="box-shadow:0 4px 24px rgba(27,43,74,0.08);">
+      <div class="bg-white rounded-xl p-8 text-center" style="box-shadow:0 4px 24px rgba(27,43,74,0.1); border:1px solid rgba(184,151,90,0.25);">
         <div class="flex justify-center mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="5" y1="8" x2="19" y2="8"/></svg>
         </div>
-        <h3 class="font-serif text-xl text-midnight mb-2">52 orações completas</h3>
+        <h3 class="font-serif text-2xl text-midnight mb-2">52 orações completas</h3>
         <p class="font-sans font-light text-base text-muted leading-relaxed">Escritas pra tocar onde a dor aperta, não pra soar bonito no papel.</p>
       </div>
 
       <!-- Card 2: livro aberto -->
-      <div class="bg-bg rounded-xl p-8 text-center" style="box-shadow:0 4px 24px rgba(27,43,74,0.08);">
+      <div class="bg-white rounded-xl p-8 text-center" style="box-shadow:0 4px 24px rgba(27,43,74,0.1); border:1px solid rgba(184,151,90,0.25);">
         <div class="flex justify-center mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         </div>
-        <h3 class="font-serif text-xl text-midnight mb-2">52 reflexões com base bíblica</h3>
+        <h3 class="font-serif text-2xl text-midnight mb-2">52 reflexões com base bíblica</h3>
         <p class="font-sans font-light text-base text-muted leading-relaxed">Que ajudam você a entender o que está vivendo, não só a suportar.</p>
       </div>
 
       <!-- Card 3: lista com check -->
-      <div class="bg-bg rounded-xl p-8 text-center" style="box-shadow:0 4px 24px rgba(27,43,74,0.08);">
+      <div class="bg-white rounded-xl p-8 text-center" style="box-shadow:0 4px 24px rgba(27,43,74,0.1); border:1px solid rgba(184,151,90,0.25);">
         <div class="flex justify-center mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><polyline points="3 6 4 7 6 5"/><polyline points="3 12 4 13 6 11"/><polyline points="3 18 4 19 6 17"/></svg>
         </div>
-        <h3 class="font-serif text-xl text-midnight mb-2">52 práticas semanais</h3>
+        <h3 class="font-serif text-2xl text-midnight mb-2">52 práticas semanais</h3>
         <p class="font-sans font-light text-base text-muted leading-relaxed">Concretas, simples, aplicáveis no dia a dia de quem tem vida real.</p>
       </div>
 
       <!-- Card 4: coração -->
-      <div class="bg-bg rounded-xl p-8 text-center" style="box-shadow:0 4px 24px rgba(27,43,74,0.08);">
+      <div class="bg-white rounded-xl p-8 text-center" style="box-shadow:0 4px 24px rgba(27,43,74,0.1); border:1px solid rgba(184,151,90,0.25);">
         <div class="flex justify-center mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
         </div>
-        <h3 class="font-serif text-xl text-midnight mb-2">Temas que falam com o agora</h3>
+        <h3 class="font-serif text-2xl text-midnight mb-2">Temas que falam com o agora</h3>
         <p class="font-sans font-light text-base text-muted leading-relaxed">Fim de ciclos, direção, força, paz, proteção, cura interior, propósito, coragem pra recomeçar.</p>
       </div>
 
       <!-- Card 5: calendário -->
-      <div class="bg-bg rounded-xl p-8 text-center" style="box-shadow:0 4px 24px rgba(27,43,74,0.08);">
+      <div class="bg-white rounded-xl p-8 text-center" style="box-shadow:0 4px 24px rgba(27,43,74,0.1); border:1px solid rgba(184,151,90,0.25);">
         <div class="flex justify-center mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
         </div>
-        <h3 class="font-serif text-xl text-midnight mb-2">Sem ordem obrigatória</h3>
+        <h3 class="font-serif text-2xl text-midnight mb-2">Sem ordem obrigatória</h3>
         <p class="font-sans font-light text-base text-muted leading-relaxed">Abre no tema que mais fala com o que você está vivendo hoje.</p>
       </div>
 
       <!-- Card 6: download -->
-      <div class="bg-bg rounded-xl p-8 text-center" style="box-shadow:0 4px 24px rgba(27,43,74,0.08);">
+      <div class="bg-white rounded-xl p-8 text-center" style="box-shadow:0 4px 24px rgba(27,43,74,0.1); border:1px solid rgba(184,151,90,0.25);">
         <div class="flex justify-center mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         </div>
-        <h3 class="font-serif text-xl text-midnight mb-2">Acesso imediato em qualquer dispositivo</h3>
+        <h3 class="font-serif text-2xl text-midnight mb-2">Acesso imediato em qualquer dispositivo</h3>
         <p class="font-sans font-light text-base text-muted leading-relaxed">PDF compatível com celular, tablet e computador. Recebe assim que o pagamento é confirmado.</p>
       </div>
 
@@ -258,7 +282,7 @@
 </section>
 
 <!-- S6: Bônus -->
-<section class="bg-bg py-24 px-6">
+<section class="bg-bg py-14 lg:py-24 px-6">
   <div class="max-w-4xl mx-auto fade-in">
     <div class="text-center mb-12">
       <span class="inline-block font-sans font-semibold text-xs tracking-widest uppercase px-5 py-2 rounded-full mb-6"
@@ -276,7 +300,7 @@
 
       <div class="lg:col-span-2 flex justify-center">
         <img src="assets/mockup-v4.webp"
-             alt="Bônus: Orações que Transformam — 7 Dias para Renovar sua Vida"
+             alt="Bônus: Orações que Transformam - 7 Dias para Renovar sua Vida"
              width="300" height="402"
              loading="lazy"
              class="w-full max-w-xs rounded-xl"
@@ -285,7 +309,7 @@
 
       <div class="lg:col-span-3 text-center lg:text-left">
         <p class="font-sans font-light text-lg leading-relaxed text-body mb-6">
-          Sete orações completas — uma para cada dia — para as áreas que mais pesam: saúde, trabalho, relacionamentos, família, prosperidade, proteção e gratidão.
+          Sete orações completas - uma para cada dia - para as áreas que mais pesam: saúde, trabalho, relacionamentos, família, prosperidade, proteção e gratidão.
         </p>
         <p class="font-sans font-light text-lg leading-relaxed text-body mb-8">
           Para quando você não sabe nem por onde começar a orar. Para quando as palavras não vêm. Para quando você só precisa de alguém que ore por você.
@@ -301,7 +325,7 @@
 </section>
 
 <!-- S7: Autoridade -->
-<section class="bg-midnight py-24 px-6">
+<section class="bg-midnight py-14 lg:py-24 px-6">
   <div class="max-w-3xl mx-auto text-center fade-in">
     <div class="gold-divider mb-10"></div>
     <p class="font-sans text-sm tracking-widest uppercase mb-6" style="color:#B8975A;">Quem está por trás deste material</p>
@@ -343,11 +367,11 @@
 </section>
 
 <!-- S8: Depoimentos -->
-<section class="bg-white py-24 px-6 overflow-hidden">
+<section class="bg-white py-14 lg:py-24 px-6 overflow-hidden">
   <div class="max-w-5xl mx-auto fade-in">
     <div class="text-center mb-14">
       <p class="font-sans text-sm tracking-widest uppercase text-gold mb-4">Depoimentos</p>
-      <h2 class="font-serif text-4xl lg:text-5xl font-normal text-midnight">O que dizem quem já caminhou</h2>
+      <h2 class="font-serif text-4xl lg:text-5xl font-normal text-midnight">Palavras de quem já está no caminho</h2>
     </div>
 
     <!-- Carousel wrapper -->
@@ -476,7 +500,7 @@
           </p>
         </div>
 
-        <!-- Card 7: Moisés (M) — antes de Claudia -->
+        <!-- Card 7: Moisés (M) - antes de Claudia -->
         <div class="carousel-card flex-shrink-0 w-80 bg-bg rounded-2xl p-8"
              style="box-shadow:0 4px 24px rgba(27,43,74,0.08);">
           <div class="flex items-center gap-4 mb-6">
@@ -540,79 +564,224 @@
 </section>
 
 <!-- S9: Oferta + Order Bump -->
-<section class="bg-bg py-24 px-6" id="oferta">
+<section class="bg-bg py-14 lg:py-24 px-6" id="oferta">
   <div class="max-w-xl mx-auto text-center fade-in">
 
     <p class="font-sans text-sm tracking-widest uppercase text-gold mb-4">Garanta o seu acesso</p>
     <h2 class="font-serif text-4xl lg:text-5xl font-normal text-midnight mb-4 leading-tight">
       Caminhada de Fé
     </h2>
-    <p class="font-serif text-xl italic text-muted mb-10">52 Semanas de Oração e Reflexão com Deus</p>
+    <p class="font-serif text-xl italic text-muted mb-10">Um plano guiado para fortalecer sua fé - semana após semana</p>
 
     <!-- Price -->
     <div class="mb-8">
       <p class="font-sans text-sm text-muted mb-1">Por apenas</p>
-      <p class="font-serif text-6xl font-semibold text-midnight">R$27</p>
+      <p class="text-midnight flex items-baseline justify-center gap-1">
+        <span class="font-sans font-semibold text-xl">R$</span>
+        <span class="font-serif font-semibold" style="font-size:4.5rem;line-height:1;">27</span>
+      </p>
       <p class="font-sans text-sm text-muted mt-1">pagamento único</p>
     </div>
 
+    <!-- Mockup oferta -->
+    <div class="mb-8">
+      <img src="assets/mockup-oferta.webp" alt="Caminhada de Fé e Orações que Transformam" loading="lazy"
+           class="w-full max-w-sm mx-auto rounded-2xl"
+           style="box-shadow:0 8px 40px rgba(27,43,74,0.12);" />
+    </div>
+
+    <!-- Incluso -->
+    <div class="text-left mb-8 space-y-2">
+      <p class="font-sans font-light text-base text-body flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Caminhada de Fé
+      </p>
+      <p class="font-sans font-light text-base text-body flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Bônus: Orações que Transformam
+      </p>
+    </div>
+
     <!-- Primary CTA -->
-    <a href="HOTMART_LINK"
-       class="inline-block w-full bg-gold hover:bg-gold-light text-white font-sans font-semibold text-lg px-10 py-5 rounded-xl transition-colors duration-200 cursor-pointer mb-10">
-      Quero minha Caminhada de Fé agora
+    <a href="https://pay.hotmart.com/C105726878P?checkoutMode=10"
+       class="inline-block w-full bg-gold hover:bg-gold-light text-white font-sans font-semibold text-lg px-10 py-5 rounded-xl transition-colors duration-200 cursor-pointer mb-3">
+      QUERO COMEÇAR MINHA CAMINHADA
     </a>
+    <p class="font-sans text-xs text-muted mb-10">Compra 100% segura via Hotmart. Acesso imediato no seu e-mail.</p>
 
     <!-- Order Bump -->
-    <div class="text-left rounded-2xl p-8"
+    <div class="text-left rounded-2xl p-6"
          style="border:1.5px solid rgba(184,151,90,0.5); background:rgba(184,151,90,0.05);">
-      <div class="flex items-start gap-4">
+      <div class="flex items-start gap-5">
         <input type="checkbox" id="order-bump" class="mt-1 w-4 h-4 cursor-pointer accent-gold flex-shrink-0" />
-        <label for="order-bump" class="cursor-pointer">
-          <span class="inline-block font-sans font-semibold text-xs tracking-widest uppercase px-3 py-1 rounded-full mb-3"
+        <label for="order-bump" class="cursor-pointer w-full">
+          <span class="inline-block font-sans font-semibold text-xs tracking-widest uppercase px-3 py-1 rounded-full mb-4"
                 style="background:rgba(184,151,90,0.15); color:#B8975A;">
             Adicionar por +R$17
           </span>
-          <p class="font-serif text-xl text-midnight font-semibold mb-2">Escudo Sagrado</p>
-          <p class="font-sans font-light text-base leading-relaxed text-body">
-            Um guia de orações de proteção e fortalecimento espiritual. Para os dias em que você precisa de mais do que reflexão, precisa de amparo.
-          </p>
+          <div class="flex gap-5 items-start">
+            <img src="assets/mockup-orderbump.webp" alt="Escudo Sagrado" loading="lazy"
+                 class="rounded-lg flex-shrink-0 w-24 object-cover"
+                 style="box-shadow:0 4px 16px rgba(27,43,74,0.15);" />
+            <div>
+              <p class="font-serif text-lg text-midnight font-semibold mb-2 leading-snug">Escudo Sagrado - Proteção para sua Vida, sua Casa e sua Família</p>
+              <p class="font-sans font-light text-sm leading-relaxed text-body mb-2">
+                10 capítulos de blindagem espiritual completa - contra o medo, a inveja, os ataques noturnos, o desânimo, a perda de propósito. Para quem sabe que a batalha não é só visível.
+              </p>
+              <p class="font-sans font-light text-sm leading-relaxed text-muted">
+                O complemento natural pra quem está em processo de recomeço.
+              </p>
+            </div>
+          </div>
         </label>
       </div>
+    </div>
+
+    <!-- Botão combo — aparece ao marcar o checkbox -->
+    <div id="combo-cta" class="hidden mt-6">
+      <a href="https://pay.hotmart.com/A105893768W?checkoutMode=10"
+         class="inline-block w-full text-center font-sans font-semibold text-base px-10 py-5 rounded-xl transition-colors duration-200 cursor-pointer"
+         style="background:#07182f; color:#D4B483; border:1.5px solid rgba(184,151,90,0.6);">
+        SIM, QUERO O ESCUDO SAGRADO TAMBÉM
+      </a>
+      <p class="font-sans text-xs text-muted text-center mt-2">Combo completo com acesso imediato.</p>
     </div>
 
   </div>
 </section>
 
 <!-- S10: Garantia -->
-<section class="bg-white py-24 px-6">
+<section class="bg-white py-14 lg:py-24 px-6">
   <div class="max-w-xl mx-auto text-center fade-in">
     <div class="flex justify-center mb-6">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
     </div>
-    <h2 class="font-serif text-3xl lg:text-4xl font-normal text-midnight mb-6">Garantia de 7 dias</h2>
-    <p class="font-sans font-light text-lg leading-relaxed text-body">
-      Se por qualquer motivo você sentir que esse material não é para você, basta nos enviar uma mensagem em até 7 dias após a compra e devolvemos 100% do seu investimento. Sem burocracia, sem perguntas.
-    </p>
-    <p class="font-sans font-light text-base text-muted mt-4">Sua confiança vale mais do que qualquer venda.</p>
+    <h2 class="font-serif text-3xl lg:text-4xl font-normal text-midnight mb-6">7 dias de garantia total.</h2>
+    <div class="space-y-4">
+      <p class="font-sans font-light text-lg leading-relaxed text-body">
+        Se você abrir o material e sentir que não é pra você - devolvo cada centavo. Sem perguntas, sem burocracia.
+      </p>
+      <p class="font-sans font-light text-lg leading-relaxed text-body">
+        Mas depois de centenas de pessoas que compraram sem um único pedido de reembolso - a garantia está aqui mais por respeito a você do que por necessidade.
+      </p>
+    </div>
   </div>
 </section>
 
 <!-- S11: CTA Final -->
-<section class="bg-midnight py-28 px-6">
+<section class="bg-midnight py-16 lg:py-28 px-6">
   <div class="max-w-2xl mx-auto text-center fade-in">
     <div class="gold-divider mb-10"></div>
-    <h2 class="font-serif text-4xl lg:text-6xl font-semibold leading-tight mb-8"
-        style="color:#EDE8DC;">
-      Você não precisa<br />atravessar isso sozinha.
+    <h2 class="font-serif text-4xl lg:text-5xl font-semibold leading-tight mb-8" style="color:#EDE8DC;">
+      Você chegou até aqui porque algo dentro de você reconheceu.
     </h2>
-    <p class="font-sans font-light text-lg leading-relaxed mb-10" style="color:#C8BFB0;">
-      Deus está no caminho com você. Esse material é o convite para reconhecer a presença dele em cada semana, em cada passo.
-    </p>
-    <a href="HOTMART_LINK"
-       class="inline-block bg-gold hover:bg-gold-light text-white font-sans font-semibold text-lg px-12 py-5 rounded-xl transition-colors duration-200 cursor-pointer">
-      Quero começar minha caminhada
+    <div class="space-y-5 font-sans font-light text-lg leading-relaxed mb-10" style="color:#C8BFB0;">
+      <p>Não é coincidência. Nunca é.</p>
+      <p>Deus está no meio do processo com você. E esse material existe pra te lembrar disso - semana após semana, no seu ritmo, sem cobrança.</p>
+      <p>O próximo passo é simples.</p>
+    </div>
+    <a href="https://pay.hotmart.com/C105726878P?checkoutMode=10"
+       class="inline-block bg-gold hover:bg-gold-light text-white font-sans font-semibold text-lg px-12 py-5 rounded-xl transition-colors duration-200 cursor-pointer mb-4">
+      QUERO COMEÇAR MINHA CAMINHADA - R$ 27,00
     </a>
+    <p class="font-sans text-sm" style="color:#8A9BBF;">Acesso imediato. Garantia de 7 dias. Sem risco.</p>
     <div class="mt-10 gold-divider"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-white py-14 lg:py-24 px-6">
+  <div class="max-w-2xl mx-auto fade-in">
+    <p class="font-sans text-sm tracking-widest uppercase text-gold mb-4 text-center">Dúvidas</p>
+    <h2 class="font-serif text-4xl lg:text-5xl font-normal text-midnight mb-12 text-center leading-tight">Perguntas frequentes</h2>
+
+    <div class="divide-y" style="border-color:rgba(184,151,90,0.3);">
+
+      <div class="faq-item">
+        <button class="faq-trigger w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer">
+          <span class="font-serif text-lg text-midnight leading-snug">Pra quem é o Caminhada de Fé?</span>
+          <span class="faq-icon flex-shrink-0 font-sans font-light text-2xl leading-none text-gold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-body overflow-hidden" style="max-height:0; transition:max-height 0.35s ease;">
+          <p class="font-sans font-light text-base leading-relaxed text-body pb-6">Para qualquer pessoa que deseja fortalecer sua espiritualidade, renovar sua fé e encontrar direção em sua caminhada com Deus. Ideal tanto para quem já tem uma rotina de oração quanto para quem está começando ou recomeçando.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer">
+          <span class="font-serif text-lg text-midnight leading-snug">O que recebo além do ebook principal?</span>
+          <span class="faq-icon flex-shrink-0 font-sans font-light text-2xl leading-none text-gold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-body overflow-hidden" style="max-height:0; transition:max-height 0.35s ease;">
+          <p class="font-sans font-light text-base leading-relaxed text-body pb-6">Ao adquirir o Caminhada de Fé, você também receberá o bônus exclusivo "Orações que Transformam: 7 Dias para Renovar sua Vida" - um ebook com orações completas para áreas essenciais da sua vida, como saúde, trabalho e família.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer">
+          <span class="font-serif text-lg text-midnight leading-snug">Quantas páginas possui o material?</span>
+          <span class="faq-icon flex-shrink-0 font-sans font-light text-2xl leading-none text-gold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-body overflow-hidden" style="max-height:0; transition:max-height 0.35s ease;">
+          <div class="font-sans font-light text-base leading-relaxed text-body pb-6 space-y-1">
+            <p>Caminhada de Fé: 278 páginas de conteúdo concreto e ilustrado.</p>
+            <p>Bônus Orações que Transformam: 57 páginas de conteúdo concreto e ilustrado.</p>
+            <p>Escudo Sagrado (conteúdo opcional): 52 páginas de conteúdo concreto e ilustrado.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer">
+          <span class="font-serif text-lg text-midnight leading-snug">É possível acessar o ebook em qualquer dispositivo?</span>
+          <span class="faq-icon flex-shrink-0 font-sans font-light text-2xl leading-none text-gold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-body overflow-hidden" style="max-height:0; transition:max-height 0.35s ease;">
+          <p class="font-sans font-light text-base leading-relaxed text-body pb-6">Sim. O ebook será enviado em formato PDF, compatível com computadores, tablets e smartphones. Você poderá acessá-lo onde e quando quiser, sem complicações.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer">
+          <span class="font-serif text-lg text-midnight leading-snug">Como acessar o produto?</span>
+          <span class="faq-icon flex-shrink-0 font-sans font-light text-2xl leading-none text-gold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-body overflow-hidden" style="max-height:0; transition:max-height 0.35s ease;">
+          <p class="font-sans font-light text-base leading-relaxed text-body pb-6">Você receberá o acesso por e-mail assim que o pagamento for confirmado. Também é possível acessar diretamente pela Hotmart: faça login, acesse o menu lateral, clique em "Minha conta" e depois em "Minhas compras" - lá estarão todos os produtos adquiridos.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer">
+          <span class="font-serif text-lg text-midnight leading-snug">Como funciona o prazo de garantia?</span>
+          <span class="faq-icon flex-shrink-0 font-sans font-light text-2xl leading-none text-gold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-body overflow-hidden" style="max-height:0; transition:max-height 0.35s ease;">
+          <p class="font-sans font-light text-base leading-relaxed text-body pb-6">O prazo de garantia é o período que você tem para solicitar o reembolso integral do valor pago, caso o produto não seja satisfatório. São 7 dias a partir da data da compra, sem perguntas e sem burocracia.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer">
+          <span class="font-serif text-lg text-midnight leading-snug">Eu receberei um livro em casa?</span>
+          <span class="faq-icon flex-shrink-0 font-sans font-light text-2xl leading-none text-gold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-body overflow-hidden" style="max-height:0; transition:max-height 0.35s ease;">
+          <p class="font-sans font-light text-base leading-relaxed text-body pb-6">Não. Trata-se de um eBook - um livro digital. Quaisquer imagens ilustradas com livros físicos são apenas para fins de publicidade.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer">
+          <span class="font-serif text-lg text-midnight leading-snug">Como faço para conhecer o canal Evangelho e Palavra?</span>
+          <span class="faq-icon flex-shrink-0 font-sans font-light text-2xl leading-none text-gold transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-body overflow-hidden" style="max-height:0; transition:max-height 0.35s ease;">
+          <p class="font-sans font-light text-base leading-relaxed text-body pb-6">Acesse diretamente pelo link: <a href="https://www.youtube.com/channel/UCEaw9TM54on97ZAH2L1wDng" target="_blank" rel="noopener" class="text-gold underline underline-offset-2 hover:text-gold-light transition-colors duration-200">youtube.com/channel/UCEaw9TM54on97ZAH2L1wDng</a></p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -624,6 +793,32 @@
 </footer>
 
   <script>
+    // Order bump checkbox — mostra botão combo
+    document.getElementById('order-bump').addEventListener('change', function() {
+      document.getElementById('combo-cta').classList.toggle('hidden', !this.checked);
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.faq-item');
+        const body = item.querySelector('.faq-body');
+        const icon = trigger.querySelector('.faq-icon');
+        const isOpen = body.style.maxHeight !== '0px' && body.style.maxHeight !== '';
+
+        // close all
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.querySelector('.faq-body').style.maxHeight = '0';
+          i.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+        });
+
+        if (!isOpen) {
+          body.style.maxHeight = body.scrollHeight + 'px';
+          icon.style.transform = 'rotate(45deg)';
+        }
+      });
+    });
+
     // Intersection Observer for fade-in
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
