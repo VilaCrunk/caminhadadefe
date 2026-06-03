@@ -285,7 +285,7 @@
 </section>
 
 <!-- S6: Bônus -->
-<section class="bg-bg py-14 lg:py-24 px-6">
+<section class="bg-white py-14 lg:py-24 px-6">
   <div class="max-w-4xl mx-auto fade-in">
     <div class="text-center mb-12">
       <span class="inline-block font-sans font-semibold text-xs tracking-widest uppercase px-5 py-2 rounded-full mb-6"
@@ -323,6 +323,116 @@
         </p>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- S9: Oferta + Order Bump -->
+<section class="bg-bg py-14 lg:py-24 px-6" id="oferta">
+  <div class="max-w-xl mx-auto text-center fade-in">
+
+    <p class="font-sans text-sm tracking-widest uppercase text-gold mb-4">Garanta o seu acesso</p>
+    <h2 class="font-serif text-4xl lg:text-5xl font-normal text-midnight mb-4 leading-tight">
+      Caminhada de Fé
+    </h2>
+    <p class="font-serif text-xl italic text-muted mb-10">Um plano guiado para fortalecer sua fé - semana após semana</p>
+
+    <!-- Price -->
+    <div class="mb-8">
+      <p class="font-sans text-sm text-muted mb-1">Por apenas</p>
+      <p class="text-midnight flex items-baseline justify-center gap-1">
+        <span class="font-sans font-semibold text-xl">R$</span>
+        <span class="font-serif font-semibold" style="font-size:4.5rem;line-height:1;">27</span>
+      </p>
+      <p class="font-sans text-sm text-muted mt-1">pagamento único</p>
+    </div>
+
+    <!-- Mockup oferta -->
+    <div class="mb-8">
+      <img src="assets/mockup-oferta.webp" alt="Caminhada de Fé e Orações que Transformam" loading="lazy"
+           class="w-full max-w-sm mx-auto rounded-2xl"
+           style="box-shadow:0 8px 40px rgba(27,43,74,0.12);" />
+    </div>
+
+    <!-- Incluso -->
+    <div class="text-left mb-8 space-y-2">
+      <p class="font-sans font-light text-base text-body flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Caminhada de Fé
+      </p>
+      <p class="font-sans font-light text-base text-body flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Bônus: Orações que Transformam
+      </p>
+    </div>
+
+    <!-- Primary CTA -->
+    <a href="https://pay.hotmart.com/C105726878P?checkoutMode=10"
+       onclick="fbq('track', 'InitiateCheckout')"
+       class="inline-block w-full bg-gold hover:bg-gold-light text-white font-sans font-semibold text-lg px-10 py-5 rounded-xl transition-colors duration-200 cursor-pointer mb-3">
+      QUERO COMEÇAR MINHA CAMINHADA
+    </a>
+    <p class="font-sans text-xs text-muted mb-10">Compra 100% segura via Hotmart. Acesso imediato no seu e-mail.</p>
+
+    <!-- Order Bump -->
+    <div class="text-left rounded-2xl p-6"
+         style="border:1.5px solid rgba(184,151,90,0.5); background:rgba(184,151,90,0.05);">
+      <div class="flex items-start gap-5">
+        <input type="checkbox" id="order-bump" class="mt-1 w-4 h-4 cursor-pointer accent-gold flex-shrink-0" />
+        <label for="order-bump" class="cursor-pointer w-full">
+          <span class="inline-block font-sans font-semibold text-xs tracking-widest uppercase px-3 py-1 rounded-full mb-4"
+                style="background:rgba(184,151,90,0.15); color:#B8975A;">
+            Adicionar por +R$17
+          </span>
+          <div class="flex gap-5 items-start">
+            <img src="assets/mockup-orderbump.webp" alt="Escudo Sagrado" loading="lazy"
+                 class="rounded-lg flex-shrink-0 w-24 object-cover"
+                 style="box-shadow:0 4px 16px rgba(27,43,74,0.15);" />
+            <div>
+              <p class="font-serif text-lg text-midnight font-semibold mb-2 leading-snug">Escudo Sagrado - Proteção para sua Vida, sua Casa e sua Família</p>
+              <p class="font-sans font-light text-sm leading-relaxed text-body mb-2">
+                Esse é um material para quem sabe que a batalha não é só visível.
+              </p>
+              <p class="font-sans font-light text-sm leading-relaxed text-body mb-2">
+                10 capítulos de blindagem espiritual completa - contra o medo, a inveja, os ataques noturnos, o desânimo e a perda de propósito.
+              </p>
+              <p class="font-sans font-light text-sm leading-relaxed text-muted">
+                O complemento natural pra quem está em processo de recomeço.
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <!-- Botão combo — aparece ao marcar o checkbox -->
+    <div id="combo-cta" class="hidden mt-6">
+      <a href="https://pay.hotmart.com/A105893768W?checkoutMode=10"
+         onclick="fbq('track', 'InitiateCheckout')"
+         class="inline-block w-full text-center font-sans font-semibold text-base px-10 py-5 rounded-xl transition-colors duration-200 cursor-pointer"
+         style="background:#07182f; color:#D4B483; border:1.5px solid rgba(184,151,90,0.6);">
+        SIM, QUERO O ESCUDO SAGRADO TAMBÉM
+      </a>
+      <p class="font-sans text-xs text-muted text-center mt-2">Combo completo com acesso imediato.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- S10: Garantia -->
+<section class="bg-white py-14 lg:py-24 px-6">
+  <div class="max-w-xl mx-auto text-center fade-in">
+    <div class="flex justify-center mb-6">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    </div>
+    <h2 class="font-serif text-3xl lg:text-4xl font-normal text-midnight mb-6">7 dias de garantia total.</h2>
+    <div class="space-y-4">
+      <p class="font-sans font-light text-lg leading-relaxed text-body">
+        Se você abrir o material e sentir que não é pra você - devolvo cada centavo. Sem perguntas, sem burocracia.
+      </p>
+      <p class="font-sans font-light text-lg leading-relaxed text-body">
+        Mas depois de centenas de pessoas que compraram sem um único pedido de reembolso - a garantia está aqui mais por respeito a você do que por necessidade.
+      </p>
     </div>
   </div>
 </section>
@@ -563,116 +673,6 @@
     <!-- Dots -->
     <div id="carousel-dots" class="flex justify-center gap-2 mt-8"></div>
 
-  </div>
-</section>
-
-<!-- S9: Oferta + Order Bump -->
-<section class="bg-bg py-14 lg:py-24 px-6" id="oferta">
-  <div class="max-w-xl mx-auto text-center fade-in">
-
-    <p class="font-sans text-sm tracking-widest uppercase text-gold mb-4">Garanta o seu acesso</p>
-    <h2 class="font-serif text-4xl lg:text-5xl font-normal text-midnight mb-4 leading-tight">
-      Caminhada de Fé
-    </h2>
-    <p class="font-serif text-xl italic text-muted mb-10">Um plano guiado para fortalecer sua fé - semana após semana</p>
-
-    <!-- Price -->
-    <div class="mb-8">
-      <p class="font-sans text-sm text-muted mb-1">Por apenas</p>
-      <p class="text-midnight flex items-baseline justify-center gap-1">
-        <span class="font-sans font-semibold text-xl">R$</span>
-        <span class="font-serif font-semibold" style="font-size:4.5rem;line-height:1;">27</span>
-      </p>
-      <p class="font-sans text-sm text-muted mt-1">pagamento único</p>
-    </div>
-
-    <!-- Mockup oferta -->
-    <div class="mb-8">
-      <img src="assets/mockup-oferta.webp" alt="Caminhada de Fé e Orações que Transformam" loading="lazy"
-           class="w-full max-w-sm mx-auto rounded-2xl"
-           style="box-shadow:0 8px 40px rgba(27,43,74,0.12);" />
-    </div>
-
-    <!-- Incluso -->
-    <div class="text-left mb-8 space-y-2">
-      <p class="font-sans font-light text-base text-body flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        Caminhada de Fé
-      </p>
-      <p class="font-sans font-light text-base text-body flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        Bônus: Orações que Transformam
-      </p>
-    </div>
-
-    <!-- Primary CTA -->
-    <a href="https://pay.hotmart.com/C105726878P?checkoutMode=10"
-       onclick="fbq('track', 'InitiateCheckout')"
-       class="inline-block w-full bg-gold hover:bg-gold-light text-white font-sans font-semibold text-lg px-10 py-5 rounded-xl transition-colors duration-200 cursor-pointer mb-3">
-      QUERO COMEÇAR MINHA CAMINHADA
-    </a>
-    <p class="font-sans text-xs text-muted mb-10">Compra 100% segura via Hotmart. Acesso imediato no seu e-mail.</p>
-
-    <!-- Order Bump -->
-    <div class="text-left rounded-2xl p-6"
-         style="border:1.5px solid rgba(184,151,90,0.5); background:rgba(184,151,90,0.05);">
-      <div class="flex items-start gap-5">
-        <input type="checkbox" id="order-bump" class="mt-1 w-4 h-4 cursor-pointer accent-gold flex-shrink-0" />
-        <label for="order-bump" class="cursor-pointer w-full">
-          <span class="inline-block font-sans font-semibold text-xs tracking-widest uppercase px-3 py-1 rounded-full mb-4"
-                style="background:rgba(184,151,90,0.15); color:#B8975A;">
-            Adicionar por +R$17
-          </span>
-          <div class="flex gap-5 items-start">
-            <img src="assets/mockup-orderbump.webp" alt="Escudo Sagrado" loading="lazy"
-                 class="rounded-lg flex-shrink-0 w-24 object-cover"
-                 style="box-shadow:0 4px 16px rgba(27,43,74,0.15);" />
-            <div>
-              <p class="font-serif text-lg text-midnight font-semibold mb-2 leading-snug">Escudo Sagrado - Proteção para sua Vida, sua Casa e sua Família</p>
-              <p class="font-sans font-light text-sm leading-relaxed text-body mb-2">
-                Esse é um material para quem sabe que a batalha não é só visível.
-              </p>
-              <p class="font-sans font-light text-sm leading-relaxed text-body mb-2">
-                10 capítulos de blindagem espiritual completa - contra o medo, a inveja, os ataques noturnos, o desânimo e a perda de propósito.
-              </p>
-              <p class="font-sans font-light text-sm leading-relaxed text-muted">
-                O complemento natural pra quem está em processo de recomeço.
-              </p>
-            </div>
-          </div>
-        </label>
-      </div>
-    </div>
-
-    <!-- Botão combo — aparece ao marcar o checkbox -->
-    <div id="combo-cta" class="hidden mt-6">
-      <a href="https://pay.hotmart.com/A105893768W?checkoutMode=10"
-         onclick="fbq('track', 'InitiateCheckout')"
-         class="inline-block w-full text-center font-sans font-semibold text-base px-10 py-5 rounded-xl transition-colors duration-200 cursor-pointer"
-         style="background:#07182f; color:#D4B483; border:1.5px solid rgba(184,151,90,0.6);">
-        SIM, QUERO O ESCUDO SAGRADO TAMBÉM
-      </a>
-      <p class="font-sans text-xs text-muted text-center mt-2">Combo completo com acesso imediato.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- S10: Garantia -->
-<section class="bg-white py-14 lg:py-24 px-6">
-  <div class="max-w-xl mx-auto text-center fade-in">
-    <div class="flex justify-center mb-6">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#B8975A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-    </div>
-    <h2 class="font-serif text-3xl lg:text-4xl font-normal text-midnight mb-6">7 dias de garantia total.</h2>
-    <div class="space-y-4">
-      <p class="font-sans font-light text-lg leading-relaxed text-body">
-        Se você abrir o material e sentir que não é pra você - devolvo cada centavo. Sem perguntas, sem burocracia.
-      </p>
-      <p class="font-sans font-light text-lg leading-relaxed text-body">
-        Mas depois de centenas de pessoas que compraram sem um único pedido de reembolso - a garantia está aqui mais por respeito a você do que por necessidade.
-      </p>
-    </div>
   </div>
 </section>
 
